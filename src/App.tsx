@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 import Work from './pages/Work';
 import Skills from './pages/Skills';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <NavBar />
@@ -20,6 +20,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import logo from '../AB-Memon.jpeg';
 import {makeStyles} from '@material-ui/core/styles';
 import {Typography} from '@mui/material';
@@ -30,6 +30,16 @@ const useStyles = makeStyles({
 
 const Home: React.FC = () => {
   const classes = useStyles();
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  useEffect(() => {
+    if (window.screen.width < 400) {
+      setSmallScreen(true);
+    } else setSmallScreen(false);
+  }, []);
+
+  const header = smallScreen ? 'h4' : 'h3';
+
   return (
     <div className={classes.container}>
       <div className={classes.logoHolder}>
@@ -46,7 +56,7 @@ const Home: React.FC = () => {
         <Typography
           data-text="Web Developer..."
           className={styles.h2}
-          variant="h3"
+          variant={header}
         >
           Web Developer...
         </Typography>
@@ -55,7 +65,15 @@ const Home: React.FC = () => {
         About
       </Typography>
       <div className={classes.descContainer}>
-        <Typography variant="h5" color="whitesmoke">
+        <Typography
+          variant="h6"
+          color="whitesmoke"
+          style={{
+            fontFamily: 'Readex Pro',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           I am an ambitious Software Engineering Student and
           <br /> a driven individual with the ability to adapt different
           <br />

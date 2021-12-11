@@ -2,14 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.5rem;
+  margin: 0.5rem;
+  min-height: 10vh;
 }
 
 .h2 {
   position: relative;
-  font-size: 14vw;
+  /* font-size: 4vw; */
   color: #11001c;
-  -webkit-text-stroke: 0.3vw #383d52;
+  -webkit-text-stroke: 0.2vw #383d52;
   text-transform: uppercase;
 }
 .h2::before {
