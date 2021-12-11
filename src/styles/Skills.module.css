@@ -1,0 +1,37 @@
+.langLogos {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.langLogos img + img {
+  margin-left: 20px;
+}
+
+.langLogos img {
+  margin: 10px;
+}
+
+.skillLogos {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.skillLogos img + img {
+  margin-left: 20px;
+}
+
+.skillLogos img {
+  margin: 10px;
+}
+
+.otherTag {
+  margin-top: 16px;
+}
+
+.otherTag div + div {
+  margin-left: 20px;
+}
+
+.otherTag div {
+  margin: 10px;
+}
