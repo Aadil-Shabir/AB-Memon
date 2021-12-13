@@ -39,7 +39,7 @@ const NavBar: React.FC = () => {
             variant="h5"
             style={{fontFamily: 'Fjalla One'}}
           >
-            Home
+            About
           </Typography>
         </Button>
         <Button

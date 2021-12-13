@@ -1,6 +1,7 @@
 import React from 'react';
 import {Typography} from '@mui/material';
 import {makeStyles} from '@material-ui/core/styles';
+import {motion} from 'framer-motion';
 
 const useStyles = makeStyles({
   container: {
@@ -34,7 +35,11 @@ const Work: React.FC = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <motion.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{delay: 0.2}}
+    >
       <div className={classes.container}>
         <Typography
           variant="h4"
@@ -114,7 +119,7 @@ const Work: React.FC = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

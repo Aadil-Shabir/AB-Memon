@@ -4,13 +4,14 @@
   align-items: center;
   margin: 0.5rem;
   min-height: 10vh;
+  white-space: nowrap;
 }
 
 .h2 {
   position: relative;
-  /* font-size: 4vw; */
+  font-size: 4vw;
   color: #11001c;
-  -webkit-text-stroke: 0.2vw #383d52;
+  -webkit-text-stroke: 0.3vw #383d52;
   text-transform: uppercase;
 }
 .h2::before {
