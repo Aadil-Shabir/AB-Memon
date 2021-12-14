@@ -4,7 +4,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import {Typography} from '@mui/material';
 import {motion} from 'framer-motion';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/About.module.css';
 
 const useStyles = makeStyles({
   container: {
